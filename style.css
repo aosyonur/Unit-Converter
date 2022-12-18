@@ -1,30 +1,33 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Dosis", sans-serif;
 }
 
 .container {
-  width: 550px;
+  width: 100vw;
+  height: 100vh;;
   text-align: center;
   background: #1f2937;
   color: white;
+
 }
 
 .main {
-  width: 550px;
-  height: 285px;
+  width: 100vw;
   background: #6943ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
 .main-header {
-  font-size: 28px;
+  font-size: 35px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  letter-spacing: 3px;
 }
 
 .main input {
@@ -36,19 +39,85 @@ body {
   background: #6943ff;
   border: 2px solid #b295ff;
   border-radius: 5px;
-  padding: 10px;
-  margin: 0;
-  margin-bottom: 35px;
+  padding: 10px 12px;
+  font-family: "Dosis", sans-serif;
+}
+
+.main input:focus, .main input:hover{
+  background-color: #1f2937;
+  color:white;
 }
 
 .main button {
-    background: white;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    padding: 10px 30px;
-    border: none;
-    font-size: 16px;
-    color: #3D3D3D;
-    margin: 0;
-    /* margin-bottom: 45px; */
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 16px;
+  color: #3d3d3d;
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800;
+  margin-top: 35px;
 }
+
+.main button:hover {
+    background-color: #1f2937;
+    color: white;
+    transition: 1;
+}
+
+.main button:active {
+    background-color: #1f2937;
+    color: rgb(238, 255, 139);
+
+}
+
+
+.conversions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #273549;
+  border-radius: 10px 10px 20px 20px;
+  width: 80vw;
+  margin-bottom: 25px;
+}
+
+.card:first-child {
+    margin-top:35px;
+}
+
+.card:last-child {
+    margin-bottom:35px;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #CCC1FF;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px white;
+}
+
+
+.darkToggle:checked {
+    background: white;
+  }
+  
+  .dark {
+    color: white;
+    background: #444;
+  }

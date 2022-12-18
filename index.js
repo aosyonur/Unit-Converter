@@ -29,3 +29,11 @@ convertBtn.addEventListener("click", function () {
   ).toFixed(3)} pounds |
   ${unitEl.value} pounds = ${Number(unitEl.value / mass).toFixed(3)} kilos`;
 });
+
+
+//darkmode
+let darkToggle = document.querySelector('#darkToggle');
+
+darkToggle.addEventListener('change', ()=> {
+  document.body.classList.toggle('dark');
+});
