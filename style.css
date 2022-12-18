@@ -5,15 +5,19 @@ body {
 }
 
 .container {
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   text-align: center;
   background: #1f2937;
   color: white;
+  min-height: 100vh;     
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
 }
 
 .main {
-  width: 100vw;
+  /* width: 100vw; */
   background: #6943ff;
   display: flex;
   flex-direction: column;
@@ -80,6 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #1f2937;
+
 }
 
 .card {
